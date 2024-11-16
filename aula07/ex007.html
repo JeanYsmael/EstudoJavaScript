@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(65, 100, 199);
+            color: white;
+            font: normal 14pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 name="yummi">Título</h1>
+    <p id="peixe">Cadê o meu peixinho?</p>
+    <p name="prato">No meu pratinho?</p>
+    <div class="lugar">Vê se não me leva pra nenhum lugar ruim.</div>
+    <script>
+        var p1 = window.document.getElementById('peixe')
+        p1.style.color = 'pink'
+
+        var p2 = window.document.getElementsByName('prato')[0]
+        p2.style.background = 'blue'
+
+        window.document.getElementsByClassName('lugar')[0].innerText = 'quentinho'
+    </script>
+</body>
+</html>
